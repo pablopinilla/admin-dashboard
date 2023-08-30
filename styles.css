@@ -1,4 +1,147 @@
+/* <GLOBAL HANDLERS> */
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+li {
+    list-style-type: none;
+}
+
+svg {
+    width: 1.3rem;
+}
+/* <GLOBAL HANDLERS> */
+
+
+/* <SIDEBAR> */
+.sidebar {
+    background-color: #1992D4;
+    color: #FFFFFF;
+    grid-row: span 2;
+    padding: 18px 26px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 6fr;
+}
+
+.dash-title {
+    padding-top: 12px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation-menu,
+.configuration-menu {
+    display: grid;
+    gap: 22px;
+}
+
+.configuration-menu {
+    margin-top: 50px;
+}
+
+.navigation-item,
+.configuration-items {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+/* </SIDEBAR> */
+
+
+/* <HEADER> */
+header {
+    background-color: #FFFFFF;
+    padding: 18px 16px 18px 56px;
+}
+
+.search-bar {
+    border: none;
+    background-color: #E2E8F0;
+    padding: 5px;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr) 1fr 1fr 3fr;
+}
+
+.header-top-right {
+    grid-column: 6 / 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.search {
+    grid-column: span 4;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.profile-name-mini {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header-main {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-main-left {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.profile-picture {
+    align-self: center;
+    grid-row: span 2;
+}
+
+.welcome-msg {
+    font-size: 14px;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.action-btn {
+    border: none;
+    border-radius: 16px;
+    color: #FFFFFF;
+    background-color: #1992D4;
+    padding: 8px 22px;
+}
+
+.header-main-right {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+}
+
+/* </HEADER> */
+
+main {
+    background-color: #E2E8F0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 7fr;
 }
