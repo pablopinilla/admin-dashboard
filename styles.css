@@ -71,10 +71,11 @@ header {
 
 .header-top {
     display: grid;
-    grid-template-columns: repeat(3, 2fr) 1fr 1fr 3fr;
+    grid-template-columns: repeat(3, 2fr) 1fr 1fr 4fr;
 }
 
 .header-top-right {
+    margin-right: 120px;
     grid-column: 6 / 7;
     display: flex;
     justify-content: center;
@@ -165,6 +166,18 @@ header {
     padding-right: 66px;
 }
 
+.project-title,
+.news-title {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.project-info,
+.news-body {
+    font-weight: 200;
+    color: #919191;
+}
+
 /* </PROJECTS> */
 
 
@@ -201,4 +214,11 @@ main {
 
 .section-intro {
     margin-bottom: 12px;
+    margin-left: 56px;
+    font-weight: bold;
+}
+
+.news-content {
+    margin-bottom: 18px;
+    margin-top: 18px;
 }
